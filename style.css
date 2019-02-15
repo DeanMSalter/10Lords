@@ -1,47 +1,26 @@
 /*up856990*/
-/*Hamburger style Menu popout*/
-.hamburger {
 
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  object-fit: cover;
-}
-
-.line {
-  background: black;
-  height: 5px;
-  width: 50px;
-  margin-bottom: 10px;
-  transition: all 1s;
-}
-
-.hamburger:hover .line1 {
-  transform: rotate(0.125turn) translate(0, 21px);
-}
-
-.hamburger:hover .line2 {
-  opacity: 0;
-}
-
-.hamburger:hover .line3 {
-  transform: rotate(-0.125turn) translate(0, -21px);
-}
-/*https://codepen.io/lara-pellegrini/pen/MBqxLw*/
-/*-----------------------------------------------------*/
-
-/*Padding around the page body */
+/*Padding around the page body and dark background colour */
 body {
+  background-color: #232020;
   padding: 25px 50px;
 }
  /*Adjusts Logo to the center of the page */
-.center {
+.img-center {
+  border-radius: 22%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  object-fit: cover;
-  width: 350px;
-  height: 350px;
+  object-fit: width 50px height 50px;
+  width: 200px;
+  height: 200px;
+  padding:1px;
+  border:1px solid #021a40;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*Moves content to the center of the yellow box*/
+.move-Content{
+padding:45px;
 }
 /*Adjusts heading text to the center of the page */
 H1 {
@@ -51,7 +30,7 @@ H1 {
 p {
   text-align: center;
 }
-/*creates buttons */
+/*creates and styles button */
 .button {
   background-color: white;
   color: black;
@@ -65,8 +44,9 @@ p {
   transition-duration: 0.4s;
   -webkit-transition-duration: 0.4s; /* Safari */
   cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-/*Centers the buttons on the page */
+/*Centers the button on the page */
 #center_buttons {
   display: flex; justify-content: center;
 }
@@ -75,13 +55,13 @@ p {
   background-color: #555555;
   color: white;
 }
-/*footer at the bottom of the page*/
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: grey;
-  color: white;
-  text-align: center;
+/*Creates and styles the yellow box, adds shade/ makes the corners round ect.*/
+.yellowBox{
+  background:#EDDD2D;
+  width:400px;
+  height:550px;
+  border-radius:40px;
+  margin: 0 auto 0 auto;
+  padding:0px 0px 0px 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 10), 0 6px 20px 0 rgba(0, 0, 0, 18);
 }
