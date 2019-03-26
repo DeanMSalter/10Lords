@@ -161,6 +161,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         ?>
       </section>
       <section>
+        
         <?php
         $property_id= $_GET['property_id'];
         $query = "SELECT * FROM chat WHERE property_id='$property_id'";
@@ -172,6 +173,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
           </div>
         <?php endwhile;?>
       </section>
+    
     </div>
 
   </body>
