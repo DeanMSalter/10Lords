@@ -1,85 +1,74 @@
-.landlord-tab{
+/*Padding around the page body and dark background colour */
+body {
+  background-color: #232020;
+  padding: 25px 50px;
+}
+ /*Adjusts Logo to the center of the page */
+.img-center {
+  border-radius: 22%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: width 50px height 50px;
+  width: 200px;
+  height: 200px;
+  padding:1px;
+  border:1px solid #021a40;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*Moves content to the center of the Red box*/
+.move-Content{
+padding:45px;
+}
+/*Adjusts heading text to the center of the page */
+H1 {
   text-align: center;
 }
-.tenant-tab{
+/*Adjusts paragraph text to the center of the page */
+p {
   text-align: center;
 }
-
-.register-form{
-  padding-left: 10%;
-  padding-right: 10%;
+/* unvisited link */
+a:link {
+  color: #EFE80F;
+}
+/* mouse over link */
+a:hover {
+  color: #bc8400;
 }
 
-.login-form{
-  padding-left: 10%;
-  padding-right: 10%;
+/*creates and styles button */
+.button {
+  background-color: white;
+  color: black;
+  border: 1px solid #555555;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-.form-control {
-    width: 50%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+/*Centers the button on the page */
+#center_buttons {
+  display: flex; justify-content: center;
 }
-
-.btn {
-    width: 50%;
-    background-color: Purple;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+/*Changes colour of buttons when the mouse hovers over */
+.button:hover {
+  background-color: #555555;
+  color: white;
 }
-
-.landlord-tab {
-    background-color: #f2f2f2;
-    margin-left: 25%;
-    margin-right: 25%;
-}
-
-.tenant-tab {
-    background-color: #f2f2f2;
-    margin-left: 25%;
-    margin-right: 25%;
-}
-
-.tab {
-    overflow: hidden;
-    background-color: #f1f1f1;
-}
-
-.tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-}
-
-.tab button.active {
-    background-color: purple;
-}
-
-.tab{
-  margin-left: 25%;
-  margin-right: 25%;
-}
-
-.tab-content {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-}
-
-.tab button.actives {
-    background-color: purple;
+/*Creates and styles the Red box, adds shade/ makes the corners round ect.*/
+.RedBox{
+  background:#B71C1C;
+  width:400px;
+  height:550px;
+  border-radius:40px;
+  margin: 0 auto 0 auto;
+  padding:0px 0px 0px 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 10), 0 6px 20px 0 rgba(0, 0, 0, 18);
 }
