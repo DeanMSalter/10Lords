@@ -30,6 +30,15 @@ H1 {
 p {
   text-align: center;
 }
+/* unvisited link */
+a:link {
+  color: Black;
+}
+/* mouse over link */
+a:hover {
+  color: #EFE80F;
+}
+
 /*creates and styles button */
 .button {
   background-color: white;
@@ -57,7 +66,7 @@ p {
 }
 /*Creates and styles the yellow box, adds shade/ makes the corners round ect.*/
 .yellowBox{
-  background:#EDDD2D;
+  background:#B71C1C;
   width:400px;
   height:550px;
   border-radius:40px;
