@@ -1,12 +1,10 @@
-/*up856990*/
-
 /*Padding around the page body and dark background colour */
 body {
   background-color: #232020;
   padding: 25px 50px;
 }
  /*Adjusts Logo to the center of the page */
-.img-center {
+#img-center {
   border-radius: 22%;
   display: block;
   margin-left: auto;
@@ -18,9 +16,15 @@ body {
   border:1px solid #021a40;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+#registerLink{
+color: white;
+}
+#signInText{
+  font-size: 150%;
+}
 /*Moves content to the center of the yellow box*/
-.move-Content{
-padding:45px;
+#move-Content{
+  padding:45px;
 }
 /*Adjusts heading text to the center of the page */
 H1 {
@@ -40,7 +44,9 @@ a:hover {
 }
 
 /*creates and styles button */
-.button {
+#signIn {
+  position: absolute;
+  right:46%;
   background-color: white;
   color: black;
   border: 1px solid #555555;
@@ -57,15 +63,15 @@ a:hover {
 }
 /*Centers the button on the page */
 #center_buttons {
-  display: flex; justify-content: center;
+
 }
 /*Changes colour of buttons when the mouse hovers over */
-.button:hover {
+#signIn:hover {
   background-color: #555555;
   color: white;
 }
 /*Creates and styles the yellow box, adds shade/ makes the corners round ect.*/
-.yellowBox{
+#yellowBox{
   background:#B71C1C;
   width:400px;
   height:550px;
