@@ -103,45 +103,49 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta charset="UTF-8">
     <title>Sign Up</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-    <style type="text/css">
-        body{ font: 14px sans-serif; }
-        .wrapper{ width: 350px; padding: 20px; }
-    </style>
+    <link href='css/register-login-style.css' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
 </head>
 <body>
     <div class="wrapper">
-        <h2>Sign Up</h2>
+      <div class = 'BlackBox' id ="centre_BlackBox">
+        <div class = 'move-Content' id = "move-Content">
+          <img src="goldLogoo.jpg" width="350" height="350" class = "img-center">
+        <h2>Tenant Sign Up</h2>
         <p>Please fill this form to create an account.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
           <div class="form-group>">
-              <label>First Name</label>
+              <p1>First Name</p1>
               <input type="text" name="fname" class="form-control" value="<?php echo $fname; ?>">
           </div>
           <div class="form-group>">
-              <label>Last Name</label>
+              <p1>Last Name</p1>
               <input type="text" name="lname" class="form-control" value="<?php echo $lname; ?>">
           </div>
             <div class="form-group <?php echo (!empty($email_err)) ? 'has-error' : ''; ?>">
-                <label>email</label>
+                <p1>email</p1>
                 <input type="text" name="email" class="form-control" value="<?php echo $email; ?>">
                 <span class="help-block"><?php echo $email_err; ?></span>
             </div>
             <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-                <label>Password</label>
+                <p1>Password</p1>
                 <input type="password" name="password" class="form-control" value="<?php echo $password; ?>">
                 <span class="help-block"><?php echo $password_err; ?></span>
             </div>
             <div class="form-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
-                <label>Confirm Password</label>
+                <p1>Confirm Password</p1>
                 <input type="password" name="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>">
                 <span class="help-block"><?php echo $confirm_password_err; ?></span>
             </div>
-            <div class="form-group">
+            <div class="form-group" id = "center_buttons">
                 <input type="submit" class="btn btn-primary" value="Submit">
                 <input type="reset" class="btn btn-default" value="Reset">
             </div>
             <p>Already have an account? <a href="tenant-login.php">Login here</a>.</p>
         </form>
+      </div>
+    </div>
     </div>
 </body>
 </html>

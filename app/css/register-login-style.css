@@ -1,0 +1,96 @@
+/*Padding around the page body and dark background colour */
+body {
+  background-color: #B71C1C;
+  padding: 25px 50px;
+}
+ /*Adjusts Logo to the center of the page */
+.img-center {
+  border-radius: 22%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: width 50px height 50px;
+  width: 200px;
+  height: 200px;
+  padding:1px;
+  border:1px solid #021a40;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*Moves content to the center of the Red box*/
+.move-Content{
+padding:45px;
+}
+
+/*Adjusts heading text to the center of the page */
+H2 {
+  text-align: center;
+    color: silver;
+}
+/*Adjusts paragraph text to the center of the page */
+p {
+  text-align: center;
+  color: silver;
+}
+p1 {
+  text-align: left;
+  color: silver;
+}
+/* unvisited link */
+a:link {
+  color: #EFE80F;
+}
+/* mouse over link */
+a:hover {
+  color: #bc8400;
+}
+
+/*creates and styles button */
+.button {
+  background-color: white;
+  color: black;
+  border: 1px solid #555555;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*creates and styles button */
+.button {
+  background-color: white;
+  color: black;
+  border: 1px solid #555555;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*Centers the button on the page */
+#center_buttons {
+  display: flex; justify-content: center;
+}
+}
+.form_text{
+  colour: silver;
+}
+/*Creates and styles the Red box, adds shade/ makes the corners round ect.*/
+.BlackBox{
+  background:#232020;
+  width:400px;
+  height:800px;
+  border-radius:40px;
+  margin: 0 auto 0 auto;
+  padding:0px 0px 0px 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 10), 0 6px 20px 0 rgba(0, 0, 0, 18);
+}

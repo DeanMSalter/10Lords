@@ -96,31 +96,34 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta charset="UTF-8">
     <title>Login</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-    <style type="text/css">
-        body{ font: 14px sans-serif; }
-        .wrapper{ width: 350px; padding: 20px; }
-    </style>
+    <link href='css/register-login-style.css' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 </head>
 <body>
     <div class="wrapper">
-        <h2>Login</h2>
+    <div class = 'BlackBox' id ="centre_BlackBox">
+      <div class = 'move-Content' id = "move-Content">
+        <img src="goldLogoo.jpg" width="350" height="350" class = "img-center">
+        <h2>Tenant Login</h2>
         <p>Please fill in your credentials to login.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group <?php echo (!empty($email_err)) ? 'has-error' : ''; ?>">
-                <label>Email</label>
+                <p1>Email</p1>
                 <input type="text" name="email" class="form-control" value="<?php echo $email; ?>">
                 <span class="help-block"><?php echo $email_err; ?></span>
             </div>
             <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-                <label>Password</label>
+                <p1>Password</p1>
                 <input type="password" name="password" class="form-control">
                 <span class="help-block"><?php echo $password_err; ?></span>
             </div>
-            <div class="form-group">
+            <div class="form-group" id = "center_buttons">
                 <input type="submit" class="btn btn-primary" value="Login">
             </div>
-            <p>Don't have an account? <a href="tenant-register.php">Sign up now</a>.</p>
+            <p>Don't have an account? <a href="tenant-register.php">Sign up now</a></p>
         </form>
+        </div>
+        </div>
     </div>
 </body>
 </html>
