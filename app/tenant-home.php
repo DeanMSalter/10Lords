@@ -45,7 +45,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 </li>
 
                 <li class="navItems">
-                  <a>Chat</a>
+                  <a href="tenant-chat.php">Chat</a>
                 </li>
 
                 <li class="navItems">
