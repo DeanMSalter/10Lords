@@ -143,6 +143,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <input type="reset" class="btn btn-default" value="Reset">
             </div>
             <p>Already have an account? <a href="tenant-login.php">Login here</a>.</p>
+              <p>Not a Tenant? <a href="index.html">Go back</a></p>
         </form>
       </div>
     </div>

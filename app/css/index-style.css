@@ -32,11 +32,14 @@ p {
 a:link {
   color: #EFE80F;
 }
+a:visited {
+  color: #EFE80F;
+}
+
 /* mouse over link */
 a:hover {
   color: #bc8400;
 }
-
 /*creates and styles button */
 .button {
   background-color: white;
