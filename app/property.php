@@ -149,7 +149,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
     <?php
     $prop_id = $_GET["property_id"];
-    $sql = "SELECT occupant.occupant_id, tenant.fname, tenant.lname FROM occupant INNER JOIN tenant ON occupant.tenant_id = tenant.tenant_id  where property_id = '$prop_id' ";
+    $sql = "SELECT occupant.occupant_id, tenant.fname, tenant.lname, tenant.tenant_id FROM occupant INNER JOIN tenant ON occupant.tenant_id = tenant.tenant_id  where property_id = '$prop_id' ";
     $result = $link->query($sql);
 
     if ($result->num_rows > 0) {
@@ -157,7 +157,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       while($fc_user = $result->fetch_assoc()) {
         ?>
         <li>
-          <a href="profile.php?fname=<?php echo $fc_user['fname']; ?>">
+          <a href="tenant-profile.php?tenant_id=<?php echo $fc_user['tenant_id']; ?>">
             <?php echo $fc_user['fname']; ?> <?php echo $fc_user['lname']; ?>
           </a>
           <a href="link.php?uid=<?php echo $fc_user['tenant_id']; ?> & property_id=<?php echo $_GET['property_id']; ?>">[Remove]</a>
