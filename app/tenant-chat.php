@@ -22,11 +22,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <link href='css/navStyle.css' rel='stylesheet' type='text/css'>
   <script src="js/script.js"></script>
   <link rel="css/stylesheet" href="index-style.css">
+    <link href='css/chat-style.css' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
   <header class="stickyNav">
-    <div class="mainHeader background-box background-color">
+      <div class="mainHeader background-box background-color ", style="background-color:#B71C1C">
       <div class="mainHeader-grid fs">
         <div class="grid-column-33-per content-align-left">
           <div class="menuNavButton">
@@ -45,7 +46,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                   <a href="chat.php">Chat</a>
                 </li>
                 <li class="navItems">
-                  <a>Acount</a>
+                  <a>Account</a>
                 </li>
                 <li class="navItems">
                   <a>Property Management</a>
@@ -65,7 +66,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         </div>
         <div class="grid-column-33-per content-align-center">
           <div class="headerLogo">
-            <p>logo</p>
+            <p id="title"> 10 Lords </p>
           </div>
         </div>
         <div class="grid-column-33-per content-align-right">
