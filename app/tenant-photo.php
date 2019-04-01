@@ -10,6 +10,7 @@
   }
   // Initialize message variable
   $msg = "";
+  $property_id = $_SESSION['property_id'];
 
   // If upload button is clicked ...
   if (isset($_POST['upload'])) {
@@ -17,12 +18,12 @@
   	$image = $_FILES['image']['name'];
   	// Get text
   	$image_text = mysqli_real_escape_string($link, $_POST['image_text']);
-    $property_id = $_GET["property_id"];
+
 
   	// image file directory
   	$target = "images/";
 
-  	$sql = "INSERT INTO images (image, image_text) VALUES ('$image', '$image_text')";
+  	$sql = "INSERT INTO image (image, image_text,property_id) VALUES ('$image', '$image_text','$property_id')";
   	// execute query
   	mysqli_query($link, $sql);
 
@@ -32,7 +33,7 @@
   		$msg = "Failed to upload image";
   	}
   }
-  $result = mysqli_query($link, "SELECT * FROM images");
+  $result = mysqli_query($link, "SELECT image, image_text FROM images WHERE property_id = $property_id ");
 ?>
 
 <!DOCTYPE html>
