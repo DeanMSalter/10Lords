@@ -59,7 +59,7 @@ $_SESSION["property_id"] = $data["property_id"];
                 </li>
 
                 <li class="navItems">
-                  <a>Property Management</a>
+                  <a href="tenant-photo.php">photo</a>
                 </li>
 
                 <li class="navItems">
