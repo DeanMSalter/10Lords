@@ -33,7 +33,7 @@
   		$msg = "Failed to upload image";
   	}
   }
-  $result = mysqli_query($link, "SELECT image, image_text FROM images WHERE property_id = $property_id ");
+  $result = mysqli_query($link, "SELECT image, image_text FROM image WHERE property_id = $property_id ");
 ?>
 
 <!DOCTYPE html>
