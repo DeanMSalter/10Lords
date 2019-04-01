@@ -19,13 +19,15 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
   <link rel="stylesheet" href="css/myStyle.css">
   <link href='css/navStyle.css' rel='stylesheet' type='text/css'>
+    <link href='css/home-style.css' rel='stylesheet' type='text/css'>
+
   <script src="js/script.js"></script>
   <link rel="css/stylesheet" href="index-style.css">
 </head>
 
 <body>
   <header class="stickyNav">
-    <div class="mainHeader background-box background-color">
+    <div class="mainHeader background-box background-color ", style="background-color:#B71C1C">
       <div class="mainHeader-grid fs">
 
         <div class="grid-column-33-per content-align-left">
@@ -49,7 +51,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 </li>
 
                 <li class="navItems">
-                  <a>Acount</a>
+                  <a>Account</a>
                 </li>
 
                 <li class="navItems">
@@ -76,7 +78,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
         <div class="grid-column-33-per content-align-center">
           <div class="headerLogo">
-            <p>logo</p>
+            <p id="title"> 10 Lords </p>
           </div>
         </div>
 
@@ -107,7 +109,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   </header>
 
   <div id="main" class="main">
-    <h1>Hi, <b><?php echo htmlspecialchars($_SESSION["fname"]); ?> <?php echo htmlspecialchars($_SESSION["lname"]); ?></b>. Welcome to our site.</h1>
+    <img src="colourLogo.jpg" alt="Logo" width="457" height="523">
+    <h1>Hi, <b><?php echo htmlspecialchars($_SESSION["fname"]); ?> <?php echo htmlspecialchars($_SESSION["lname"]); ?></b>. Welcome to the 10 Lords Accommodation Web Portal.</h1>
 
   </div>
 
