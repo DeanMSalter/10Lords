@@ -34,10 +34,16 @@ CREATE TABLE chat (
   message VARCHAR(255) NOT NULL
 );
 
-CREATE TABLE images (
-  id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+CREATE TABLE image (
+  image_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
   image VARCHAR(100) NOT NULL,
   image_text TEXT NOT NULL
+);
+
+CREATE TABLE document (
+  document_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  document VARCHAR(100) NOT NULL,
+  document_text TEXT NOT NULL
 );
 
 SELECT occupant.occupant_id, tenant.fname, tenant.lname FROM Ocupant INNER JOIN tenant ON occupant.tenant_id = tenant.tenant_id where property_id = '$prop_id';
