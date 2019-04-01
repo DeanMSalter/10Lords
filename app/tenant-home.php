@@ -7,6 +7,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: index.html");
     exit;
 }
+$id = $_SESSION["id"];
+$fetch = mysqli_query($link, "SELECT * FROM occupant WHERE tenant_id = $id ");
+$data = mysqli_fetch_array($fetch);
+$_SESSION["property_id"] = $data["property_id"];
 ?>
 
 
