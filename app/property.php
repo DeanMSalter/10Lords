@@ -8,6 +8,31 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   header("location: index.html");
   exit;
 }
+$msg = "";
+$property_id = $_GET['property_id'];
+
+// If upload button is clicked ...
+if (isset($_POST['upload'])) {
+  // Get image name
+  $document = $_FILES['document']['name'];
+  // Get text
+  $document_text = mysqli_real_escape_string($link, $_POST['document_text']);
+
+
+  // image file directory
+  $target = "documents/";
+
+  $sql = "INSERT INTO document (document, document_text,property_id) VALUES ('$document', '$document_text','$property_id')";
+  // execute query
+  mysqli_query($link, $sql);
+
+  if (move_uploaded_file($_FILES['document']['tmp_name'], $target)) {
+    $msg = "document uploaded successfully";
+  }else{
+    $msg = "Failed to upload document";
+  }
+}
+$result = mysqli_query($link, "SELECT document, document_text FROM document WHERE property_id = $property_id ");
 ?>
 
 <!DOCTYPE html>
@@ -171,6 +196,32 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       <?php
     }
     ?>
+        <h1>document upload</h1>
+    <?php
+    while ($row = mysqli_fetch_array($result)) {
+      echo "<div id='img_div'>";
+      echo "<img src='images/".$row['document']."' >";
+      echo "<p>".$row['document_text']."</p>";
+      echo "</div>";
+    }
+    ?>
+    <form method="POST"  enctype="multipart/form-data">
+      <input type="hidden" name="size" value="1000000">
+      <div>
+        <input type="file" name="document">
+      </div>
+      <div>
+        <textarea
+        id="text"
+        cols="40"
+        rows="4"
+        name="document_text"
+        placeholder="Say something about this image..."></textarea>
+      </div>
+      <div>
+        <button type="submit" name="upload">POST</button>
+      </div>
+    </form>
   </div>
 
 </body>
