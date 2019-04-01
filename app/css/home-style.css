@@ -1,0 +1,29 @@
+/*Padding around the page body and dark background colour */
+body {
+  background-color: #FFFFFF;
+  padding: 25px 50px;
+}
+
+#title {
+    color: black;
+    text-align: center;
+    text-align: justify;
+    font-family: Arial, Geneva, Helvetica, sans-serif;
+    font-weight: bold;
+     font-size: 200%;
+     margin-top: -5px;
+
+}
+
+b{
+  font-family: Arial, Geneva, Helvetica, sans-serif;
+}
+
+h1{
+  font-family: Arial, Geneva, Helvetica, sans-serif;
+}
+
+a{
+  font-family: Arial, Geneva, Helvetica, sans-serif;
+
+}
