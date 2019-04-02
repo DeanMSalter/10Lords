@@ -222,6 +222,20 @@ $result = mysqli_query($link, "SELECT document, document_text FROM document WHER
         <button type="submit" name="upload">POST</button>
       </div>
     </form>
+        <h1>View pictures</h1>
+    <?php
+    $property_id = $_GET['property_id'];
+    $result = mysqli_query($link, "SELECT image, image_text FROM image WHERE property_id = $property_id ");
+    ?>
+
+    <?php
+    while ($row = mysqli_fetch_array($result)) {
+      echo "<div id='img_div'>";
+      echo "<img src='images/".$row['image']."' >";
+      echo "<p>".$row['image_text']."</p>";
+      echo "</div>";
+    }
+    ?>
   </div>
 
 </body>
