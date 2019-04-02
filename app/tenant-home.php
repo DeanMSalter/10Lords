@@ -63,6 +63,10 @@ $_SESSION['property_id']= $f['property_id'];
                 <li class="navItems">
                   <a href="tenant-photo.php">photo</a>
                 </li>
+                  
+                 <li class="navItems">
+                  <a href="tenant-document.php">View Documents</a>
+                </li>
 
                 <li class="navItems">
                   <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
