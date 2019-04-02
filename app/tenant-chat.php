@@ -140,10 +140,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         $f = $result1->fetch_assoc();
                 $property_id= $f['property_id'];
         ?>
-        <?php
+                <?php
         if(isset($_POST['send'])){
-
-
+          $property_id = $_SESSION['property_id'];
           $messsage = $_POST['message'];
 
           $query = "INSERT INTO chat (property_id,message) values ('$property_id','$messsage')";
@@ -155,6 +154,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       <section>
 
         <?php
+        $property_id = $_SESSION['property_id'];
         $query = "SELECT * FROM chat WHERE property_id='$property_id'";
         $run = $link->query($query);
         while($row = $run->fetch_array()) :
