@@ -118,7 +118,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   </header>
 
   <div id="main" class="main">
-    <img src="colourLogo.jpg" alt="Logo" width="457" height="523">
     <h1>View Documents</h1>
     <?php
     $property_id = $_SESSION['property_id'];
