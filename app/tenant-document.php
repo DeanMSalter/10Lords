@@ -47,15 +47,23 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 </li>
 
                 <li class="navItems">
-                  <a href="tenant-chat.php">Chat</a>
+                  <a href="tenant-chat.php">Chat </a>
                 </li>
 
                 <li class="navItems">
-                  <a>Account</a>
+                  <a>Account </a>
                 </li>
 
                 <li class="navItems">
-                  <a href="tenant-photo.php">photo</a>
+                  <a href="tenant-photo.php">Photos </a>
+                </li>
+
+                 <li class="navItems">
+                  <a>View Documents </a>
+                </li>
+
+                <li class="navItems">
+                  <a>Property Management</a>
                 </li>
 
                 <li class="navItems">
@@ -65,6 +73,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 <li class="navItems">
                   <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
                 </li>
+
 
               </ul>
 
