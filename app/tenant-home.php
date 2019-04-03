@@ -98,7 +98,7 @@ $_SESSION['property_id']= $f['property_id'];
   </header>
 
   <div id="main" class="main">
-    <img id="logo" src="goldLogoo.jpg" alt="Logo" width="150" height="150">
+      <img id="logo" src="colourLogo.png" alt="Logo" width="400" height="458">
     <h1 id="greeting">Hi, <b><?php echo htmlspecialchars($_SESSION["fname"]); ?> <?php echo htmlspecialchars($_SESSION["lname"]); ?></b>. Welcome to the 10 Lords Accommodation Web Portal.</h1>
 
   </div>
