@@ -43,8 +43,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 <li class="navItems">
                   <a href="tenant-chat.php">Chat</a>
                 </li>
-                <li class="navItems">
-                  <a>Account</a>
+               <li class="navItems">
+                  <a href="tenant-account.php">Account </a>
                 </li>
                 <li class="navItems">
                   <a>Property Management</a>
