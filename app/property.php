@@ -50,7 +50,7 @@ $result = mysqli_query($link, "SELECT document, document_text FROM document WHER
 
 <body>
   <header class="stickyNav">
-    <div class="mainHeader background-box background-color">
+      <div class="mainHeader background-box background-color ", style="background-color:#B71C1C">
       <div class="mainHeader-grid fs">
 
         <div class="grid-column-33-per content-align-left">
