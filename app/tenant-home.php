@@ -21,7 +21,7 @@ $_SESSION['property_id']= $f['property_id'];
 <head>
   <link rel="shortcut icon" href="ico2.ico" type="image/x-icon">
   <meta charset="utf-8">
-  <title>Landlord Home</title>
+  <title>Tenant Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
   <link rel="stylesheet" href="css/myStyle.css">
   <link href='css/navStyle.css' rel='stylesheet' type='text/css'>
@@ -44,7 +44,7 @@ $_SESSION['property_id']= $f['property_id'];
           </div>
 
           <nav id="navigationBar" class="sideNav background-color">
-        
+
             <div class="navContainer">
               <ul class="navMenu">
 
@@ -69,7 +69,7 @@ $_SESSION['property_id']= $f['property_id'];
                 </li>
 
                 <li class="navItems">
-                  <a>Property Management</a>
+                  <a href ="property.php"> Property Management</a>
                 </li>
 
                 <li class="navItems">
@@ -82,9 +82,6 @@ $_SESSION['property_id']= $f['property_id'];
 
               </ul>
 
-              <footer>
-                <p></p>
-              </footer>
 
             </div>
           </nav>
