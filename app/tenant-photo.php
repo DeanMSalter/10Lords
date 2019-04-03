@@ -64,7 +64,7 @@
                 </li>
 
                 <li class="navItems">
-                  <a href="chat.php">Chat</a>
+                  <a href="tenant-chat.php">Chat</a>
                 </li>
                   <li class="navItems">
                   <a href="tenant-account.php">Account </a>
