@@ -3,7 +3,15 @@ body {
   background-color: #FFFFFF;
   padding: 25px 50px;
 }
-
+#logo{
+  position: absolute;
+  top:0%;
+  left:0%;
+}
+#greeting{
+  position: absolute;
+  top:20%;
+}
 #title {
     color: black;
     text-align: center;
@@ -12,7 +20,6 @@ body {
     font-weight: bold;
      font-size: 200%;
      margin-top: -5px;
-
 }
 
 b{

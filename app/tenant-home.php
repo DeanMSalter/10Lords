@@ -63,7 +63,7 @@ $_SESSION['property_id']= $f['property_id'];
                 <li class="navItems">
                   <a href="tenant-photo.php">photo</a>
                 </li>
-                  
+
                  <li class="navItems">
                   <a href="tenant-document.php">View Documents</a>
                 </li>
@@ -91,36 +91,13 @@ $_SESSION['property_id']= $f['property_id'];
             <p id="title"> 10 Lords </p>
           </div>
         </div>
-
-        <div class="grid-column-33-per content-align-right">
-          <div class="socialLayout">
-            <ul>
-              <li>
-                <a href="https://twitter.com/leoclarke_" target="_blank">
-                  <img height="20" width="20" src="socials/twitter.png" alt="Twitter Icon">
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/leoclarke_/" target="_blank">
-                  <img height="20" width="20" src="socials/instagramPNG.png" alt="Instagram Icon">
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/leo-clarke-663315157/" target="_blank">
-                  <img height="20" width="20" src="socials/linkedinPNG.png" alt="Linkedin Icon">
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
       </div>
     </div>
   </header>
 
   <div id="main" class="main">
-    <img src="colourLogo.jpg" alt="Logo" width="457" height="523">
-    <h1>Hi, <b><?php echo htmlspecialchars($_SESSION["fname"]); ?> <?php echo htmlspecialchars($_SESSION["lname"]); ?></b>. Welcome to the 10 Lords Accommodation Web Portal.</h1>
+    <img id="logo" src="goldLogoo.jpg" alt="Logo" width="150" height="150">
+    <h1 id="greeting">Hi, <b><?php echo htmlspecialchars($_SESSION["fname"]); ?> <?php echo htmlspecialchars($_SESSION["lname"]); ?></b>. Welcome to the 10 Lords Accommodation Web Portal.</h1>
 
   </div>
 

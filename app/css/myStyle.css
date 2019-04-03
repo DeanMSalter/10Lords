@@ -1,9 +1,14 @@
+html{
+   overflow-y: scroll;
+}
 h1, h2, h3, p{
   text-align: left;
   color: black;
   padding-left: 10px;
 }
-
+body{
+  position: absolute;
+}
 h1{
   font-size: 60px;
   padding-left: 60px;
