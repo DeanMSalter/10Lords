@@ -87,7 +87,7 @@ $_SESSION['property_id']= $f['property_id'];
 
               </ul>
 
-        
+
 
             </div>
           </nav>
@@ -102,8 +102,6 @@ $_SESSION['property_id']= $f['property_id'];
     </div>
   </header>
 
-  <div id="main" class="main">
-    <img id="logo" src="colourLogo.jpg" alt="Logo" width="400" height="458">
 
   </div>
 
