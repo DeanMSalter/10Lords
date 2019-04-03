@@ -49,41 +49,37 @@ $_SESSION['property_id']= $f['property_id'];
               <ul class="navMenu">
 
                 <li class="navItems">
-                  <a>Home </a>
+                  <a>Home</a>
                 </li>
 
                 <li class="navItems">
-                  <a href="tenant-chat.php">Chat </a>
+                  <a href="tenant-chat.php">Chat</a>
                 </li>
 
                 <li class="navItems">
-                  <a>Account </a>
+                  <a>Account</a>
                 </li>
 
                 <li class="navItems">
-                  <a href="tenant-photo.php">Photos </a>
+                  <a href="tenant-photo.php">photo</a>
                 </li>
 
                  <li class="navItems">
-                  <a href="tenant-document.php">View Documents </a>
+                  <a href="tenant-document.php">View Documents</a>
                 </li>
 
                 <li class="navItems">
-                  <a>Property Management</a>
+                  <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
                 </li>
 
                 <li class="navItems">
-                  <a href="reset-password.php" class="btn btn-warning">Reset Password</a>
-                </li>
-
-                <li class="navItems">
-                  <a href="logout.php" class="btn btn-danger">Sign Out </a>
+                  <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
                 </li>
 
               </ul>
 
               <footer>
-                <p></p>
+                <p>something</p>
               </footer>
 
             </div>
@@ -100,7 +96,7 @@ $_SESSION['property_id']= $f['property_id'];
   </header>
 
   <div id="main" class="main">
-    <img id="logo" src="colourLogo.jpg" alt="Logo" width="400" height="458">
+    <img id="logo" src="goldLogoo.jpg" alt="Logo" width="150" height="150">
     <h1 id="greeting">Hi, <b><?php echo htmlspecialchars($_SESSION["fname"]); ?> <?php echo htmlspecialchars($_SESSION["lname"]); ?></b>. Welcome to the 10 Lords Accommodation Web Portal.</h1>
 
   </div>

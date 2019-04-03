@@ -13,7 +13,27 @@ h1{
   font-size: 60px;
   padding-left: 60px;
 }
+#chat-Container{
+  position: absolute;
+  top:25%
+}
+#chatHeader{
+  position: absolute;
+  top:5%;
+  left:-5%;
+}
+#submitChat{
+  position: absolute;
+  top:20%;
+  left:0%;
 
+}
+#submitButton{
+  position: absolute;
+  top:20%;
+  left:14%;
+    height:5%;
+}
 .main {
   height: 100%;
   width: 85%;
@@ -162,6 +182,7 @@ margin-bottom:5px;
 border-bottom:1px solid silver;
 font-weight:bold;
 }
+
 
 .form-group{
 

@@ -90,24 +90,18 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       <div id="container">
         <div class="row">
           <div class="col-sm-2 col-md-6">
-            <h1 class="alert alert-success">Live Chat</h1>
+            <h1 id="chatHeader">Live Chat</h1>
             <h1 class="alert alert-success">
               <form method="post">
                 <div class="form-group">
-                  <textarea class="form-control" placeholder="Your Message" name="message"></textarea>
+                  <textarea id="submitChat" class="form-control" placeholder="Your Message" name="message"></textarea>
                 </div>
                 <div class="form-group">
-                  <input class="btn btn-success btn-block" name="send"  type="submit" value="Send">
+                  <input id = "submitButton" class="btn btn-success btn-block" name="send"  type="submit" value="Send">
                 </div>
 
               </form>
             </div></h1>
-
-            <div class="col-sm-2 col-md-6">
-              <div id="chat" class="chat">
-
-              </div>
-            </div>
           </div>
         </div>
         <?php
@@ -129,7 +123,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         }
         ?>
       </section>
-      <section>
+      <section id="chat-Container">
 
         <?php
         $property_id = $_SESSION['property_id'];
