@@ -57,11 +57,11 @@ $_SESSION['property_id']= $f['property_id'];
                 </li>
 
                 <li class="navItems">
-                  <a href="tenant-account.php">Account </a>
+                  <a>Account </a>
                 </li>
 
                 <li class="navItems">
-                  <a href="tenant-photo.php">photo</a>
+                  <a href="tenant-photo.php">Photos</a>
                 </li>
 
                  <li class="navItems">
@@ -73,7 +73,7 @@ $_SESSION['property_id']= $f['property_id'];
                 </li>
 
                 <li class="navItems">
-                  <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
+                  <a href="reset-password.php" class="btn btn-warning">Reset Password</a>
                 </li>
 
                 <li class="navItems">
