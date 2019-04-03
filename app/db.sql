@@ -44,7 +44,8 @@ CREATE TABLE image (
 CREATE TABLE document (
   document_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
   document VARCHAR(100) NOT NULL,
-  document_text TEXT NOT NULL
+  document_text TEXT NOT NULL,
+  property_id int NOT NULL
 );
 
 SELECT occupant.occupant_id, tenant.fname, tenant.lname FROM Ocupant INNER JOIN tenant ON occupant.tenant_id = tenant.tenant_id where property_id = '$prop_id';
