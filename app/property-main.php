@@ -12,6 +12,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="icon" href="favicon/favicon.ico" sizes="16x16" type="image/png">
   <link rel="shortcut icon" href="ico2.ico" type="image/x-icon">
   <meta charset="utf-8">
   <title>Landlord Home</title>
@@ -21,6 +22,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <script src="js/script.js"></script>
   <link rel="css/stylesheet" href="index-style.css">
 </head>
+
 
 <body>
   <header class="stickyNav">
