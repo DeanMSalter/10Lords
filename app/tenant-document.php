@@ -90,23 +90,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
         <div class="grid-column-33-per content-align-right">
           <div class="socialLayout">
-            <ul>
-              <li>
-                <a href="https://twitter.com/leoclarke_" target="_blank">
-                  <img height="20" width="20" src="socials/twitter.png" alt="Twitter Icon">
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/leoclarke_/" target="_blank">
-                  <img height="20" width="20" src="socials/instagramPNG.png" alt="Instagram Icon">
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/leo-clarke-663315157/" target="_blank">
-                  <img height="20" width="20" src="socials/linkedinPNG.png" alt="Linkedin Icon">
-                </a>
-              </li>
-            </ul>
+      
           </div>
         </div>
 
