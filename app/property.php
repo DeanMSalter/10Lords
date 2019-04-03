@@ -185,7 +185,7 @@ $result = mysqli_query($link, "SELECT document, document_text FROM document WHER
           <a href="tenant-profile.php?tenant_id=<?php echo $fc_user['tenant_id']; ?>">
             <?php echo $fc_user['fname']; ?> <?php echo $fc_user['lname']; ?>
           </a>
-          <a href="link.php?uid=<?php echo $fc_user['tenant_id']; ?> & property_id=<?php echo $_GET['property_id']; ?>">[Remove]</a>
+          <a href="remove-tenant.php?uid=<?php echo $fc_user['tenant_id']; ?>">[Remove]</a>
         </li>
         <?php
       }
