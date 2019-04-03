@@ -67,7 +67,7 @@
                   <a>Account</a>
                 </li>
                 <li class="navItems">
-                  <a href="tenant-photo.php">Photo</a>
+                  <a href="tenant-photo.php">Photos</a>
                 </li>
 
                 <li class="navItems">
