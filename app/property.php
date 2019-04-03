@@ -41,7 +41,7 @@ $result = mysqli_query($link, "SELECT document, document_text FROM document WHER
   <link rel="icon" href="favicon/favicon.ico" sizes="16x16" type="image/png">
   <link rel="shortcut icon" href="ico2.ico" type="image/x-icon">
   <meta charset="utf-8">
-  <title>Landlord Home</title>
+  <title>Your Property</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
   <link rel="stylesheet" href="css/myStyle.css">
   <link href='css/home-style.css' rel='stylesheet' type='text/css'>
@@ -100,9 +100,6 @@ $result = mysqli_query($link, "SELECT document, document_text FROM document WHER
 
               </ul>
 
-              <footer>
-                <p>something</p>
-              </footer>
 
             </div>
           </nav>
@@ -110,29 +107,13 @@ $result = mysqli_query($link, "SELECT document, document_text FROM document WHER
 
         <div class="grid-column-33-per content-align-center">
           <div class="headerLogo">
-            <p>logo</p>
+            <p id="title"> 10 Lords </p>
           </div>
         </div>
 
         <div class="grid-column-33-per content-align-right">
           <div class="socialLayout">
-            <ul>
-              <li>
-                <a href="https://twitter.com/leoclarke_" target="_blank">
-                  <img height="20" width="20" src="socials/twitter.png" alt="Twitter Icon">
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/leoclarke_/" target="_blank">
-                  <img height="20" width="20" src="socials/instagramPNG.png" alt="Instagram Icon">
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/leo-clarke-663315157/" target="_blank">
-                  <img height="20" width="20" src="socials/linkedinPNG.png" alt="Linkedin Icon">
-                </a>
-              </li>
-            </ul>
+
           </div>
         </div>
       </div>

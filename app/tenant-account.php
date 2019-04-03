@@ -19,9 +19,9 @@ $_SESSION['property_id']= $f['property_id'];
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="shortcut icon" href="ico2.ico" type="image/x-icon">
+    <link rel="icon" href="favicon/favicon.ico" sizes="16x16" type="image/png">
   <meta charset="utf-8">
-  <title>Landlord Home</title>
+  <title>Your Account</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
   <link rel="stylesheet" href="css/myStyle.css">
   <link href='css/navStyle.css' rel='stylesheet' type='text/css'>

@@ -96,7 +96,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
   <link rel="icon" href="favicon/favicon.ico" sizes="16x16" type="image/png">
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Tenant Login</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
     <link href='css/register-login-style.css' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />

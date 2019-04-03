@@ -16,7 +16,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <link rel="icon" href="favicon/favicon.ico" sizes="16x16" type="image/png">
   <link rel="shortcut icon" href="ico2.ico" type="image/x-icon">
   <meta charset="utf-8">
-  <title>Landlord Home</title>
+  <title>Tenant Documents</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
   <link rel="stylesheet" href="css/myStyle.css">
   <link href='css/navStyle.css' rel='stylesheet' type='text/css'>
@@ -43,19 +43,19 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
               <ul class="navMenu">
 
                 <li class="navItems">
-                  <a>Home</a>
+                  <a href="tenant-home">Home</a>
                 </li>
 
                 <li class="navItems">
-                  <a href="tenant-chat.php">Chat </a>
+                  <a href="tenant-chat.php">Chat</a>
                 </li>
 
                 <li class="navItems">
-                  <a>Account </a>
+                  <a href="tenant-account.php">Account </a>
                 </li>
 
                 <li class="navItems">
-                  <a href="tenant-photo.php">Photos </a>
+                  <a href="tenant-photo.php">Photos</a>
                 </li>
 
                  <li class="navItems">
@@ -63,7 +63,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 </li>
 
                 <li class="navItems">
-                  <a>Property Management</a>
+                  <a href ="property.php"> Property Management</a>
                 </li>
 
                 <li class="navItems">
@@ -73,6 +73,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 <li class="navItems">
                   <a href="logout.php" class="btn btn-danger">Sign Out </a>
                 </li>
+
 
 
               </ul>
