@@ -102,6 +102,9 @@ $_SESSION['property_id']= $f['property_id'];
     </div>
   </header>
 
+   <div id="main" class="main">
+        <img id="logo" src="logoTransparent.png" alt="Logo" width="1000" height="800">
+    <h1 id="greeting"> <b></b> Account Managment</h1>
 
   </div>
 
