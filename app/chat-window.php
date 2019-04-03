@@ -31,13 +31,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
         <div class="grid-column-33-per content-align-left">
           <div class="menuNavButton">
-            <span onclick="openNav()">
+            <span onclick="toggleNav()">
               <img class="menuNavImg" width="25" height="25" src="MenuNav.png" alt="Menu Navigation Button">
             </span>
           </div>
 
           <nav id="navigationBar" class="sideNav background-color">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="navContainer">
               <ul class="navMenu">
 

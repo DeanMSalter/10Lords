@@ -1,6 +1,8 @@
 <?php
+
   require_once "config.php";
   session_start();
+
   // Check if the user is logged in, if not then redirect him to login page
   if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       header("location: index.html");
@@ -9,17 +11,22 @@
   // Initialize message variable
   $msg = "";
   $property_id = $_SESSION['property_id'];
+
   // If upload button is clicked ...
   if (isset($_POST['upload'])) {
   	// Get image name
   	$image = $_FILES['image']['name'];
   	// Get text
   	$image_text = mysqli_real_escape_string($link, $_POST['image_text']);
+
+
   	// image file directory
   	$target = "images/";
+
   	$sql = "INSERT INTO image (image, image_text,property_id) VALUES ('$image', '$image_text','$property_id')";
   	// execute query
   	mysqli_query($link, $sql);
+
   	if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
   		$msg = "Image uploaded successfully";
   	}else{
@@ -40,21 +47,19 @@
   <link href='css/navStyle.css' rel='stylesheet' type='text/css'>
   <script src="js/script.js"></script>
   <link rel="css/stylesheet" href="index-style.css">
-  <link href='css/home-style.css' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
   <header class="stickyNav">
-    <div class="mainHeader background-box background-color ", style="background-color:#B71C1C">
+    <div class="mainHeader background-box background-color">
       <div class="mainHeader-grid fs">
         <div class="grid-column-33-per content-align-left">
           <div class="menuNavButton">
-            <span onclick="openNav()">
+            <span onclick="toggleNav()">
               <img class="menuNavImg" width="25" height="25" src="MenuNav.png" alt="Menu Navigation Button">
             </span>
           </div>
           <nav id="navigationBar" class="sideNav background-color">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="navContainer">
               <ul class="navMenu">
                 <li class="navItems">
@@ -64,25 +69,16 @@
                   <a href="chat.php">Chat</a>
                 </li>
                 <li class="navItems">
-                  <a>Account</a>
+                  <a>Acount</a>
                 </li>
-                <li class="navItems">
-                  <a href="tenant-photo.php">Photos</a>
-                </li>
-
-                <li class="navItems">
-                 <a href="tenant-document.php">View Documents</a>
-               </li>
-
                 <li class="navItems">
                   <a href ="property.php"> Property Management</a>
                 </li>
-
                 <li class="navItems">
-                  <a href="reset-password.php" class="btn btn-warning">Reset Password</a>
+                  <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
                 </li>
                 <li class="navItems">
-                  <a href="logout.php" class="btn btn-danger">Sign Out </a>
+                  <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
                 </li>
               </ul>
               <footer>
@@ -93,7 +89,7 @@
         </div>
         <div class="grid-column-33-per content-align-center">
           <div class="headerLogo">
-            <p id="title"> 10 Lords </p>
+            <p>logo</p>
           </div>
         </div>
         <div class="grid-column-33-per content-align-right">
@@ -122,7 +118,7 @@
   </header>
 
   <div id="main" class="main">
-    <h1>Photo Upload</h1>
+    <h1>photo upload</h1>
     <?php
     while ($row = mysqli_fetch_array($result)) {
       echo "<div id='img_div'>";

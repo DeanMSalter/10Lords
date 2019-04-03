@@ -7,7 +7,15 @@ function closeNav() {
   document.getElementById("navigationBar").style.width = "0px";
   document.getElementById("main").style.width = "100%";
 }
-
+function toggleNav(){
+  if(document.getElementById("navigationBar").style.width == "0px"){
+    document.getElementById("navigationBar").style.width = "15%";
+    document.getElementById("main").style.width = "85%";
+  }else{
+    document.getElementById("navigationBar").style.width = "0px";
+    document.getElementById("main").style.width = "100%";
+  }
+}
 function openTab(evt, tabName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
