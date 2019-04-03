@@ -43,33 +43,37 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
               <ul class="navMenu">
 
                 <li class="navItems">
-                  <a>Home</a>
+                  <a href="tenant-home.php">Home</a>
                 </li>
-
                 <li class="navItems">
                   <a href="tenant-chat.php">Chat</a>
                 </li>
-
                 <li class="navItems">
                   <a>Account</a>
                 </li>
-
                 <li class="navItems">
-                  <a href="tenant-photo.php">photo</a>
+                  <a href="tenant-photo.php">Photos</a>
                 </li>
 
                 <li class="navItems">
-                  <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
+                 <a>View Documents</a>
+               </li>
+
+                <li class="navItems">
+                  <a href ="property.php"> Property Management</a>
                 </li>
 
                 <li class="navItems">
-                  <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
+                  <a href="reset-password.php" class="btn btn-warning">Reset Password</a>
+                </li>
+                <li class="navItems">
+                  <a href="logout.php" class="btn btn-danger">Sign Out </a>
                 </li>
 
               </ul>
 
               <footer>
-                <p>something</p>
+                <p></p>
               </footer>
 
             </div>
@@ -84,23 +88,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
         <div class="grid-column-33-per content-align-right">
           <div class="socialLayout">
-            <ul>
-              <li>
-                <a href="https://twitter.com/leoclarke_" target="_blank">
-                  <img height="20" width="20" src="socials/twitter.png" alt="Twitter Icon">
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/leoclarke_/" target="_blank">
-                  <img height="20" width="20" src="socials/instagramPNG.png" alt="Instagram Icon">
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/leo-clarke-663315157/" target="_blank">
-                  <img height="20" width="20" src="socials/linkedinPNG.png" alt="Linkedin Icon">
-                </a>
-              </li>
-            </ul>
+
           </div>
         </div>
 
@@ -109,7 +97,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   </header>
 
   <div id="main" class="main">
-    <img src="colourLogo.jpg" alt="Logo" width="457" height="523">
+    <img src="colourLogo.jpg" alt="Logo" width="400" height="458">
     <h1>View Documents</h1>
     <?php
     $property_id = $_SESSION['property_id'];
