@@ -58,7 +58,7 @@ $_SESSION['property_id']= $f['property_id'];
                 </li>
 
                 <li class="navItems">
-                  <a>Account</a>
+                  <a href="tenant-account.php">Account </a>
                 </li>
 
                 <li class="navItems">
