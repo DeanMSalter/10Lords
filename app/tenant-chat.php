@@ -49,15 +49,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                   <a>Property Management</a>
                 </li>
                 <li class="navItems">
-                  <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
+                  <a href="reset-password.php">Reset Your Password</a>
                 </li>
                 <li class="navItems">
-                  <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
+                  <a href="logout.php" >Sign Out of Your Account</a>
                 </li>
               </ul>
-              <footer>
-                <p>something</p>
-              </footer>
             </div>
           </nav>
         </div>
