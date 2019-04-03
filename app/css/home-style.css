@@ -7,6 +7,7 @@ body {
   position: absolute;
   top:0%;
   left:0%;
+  z-index: 1;
 }
 #greeting{
   position: absolute;
@@ -28,6 +29,7 @@ b{
 
 h1{
   font-family: Arial, Geneva, Helvetica, sans-serif;
+  z-index: 10;
 }
 
 a{

@@ -90,7 +90,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
         <div class="grid-column-33-per content-align-right">
           <div class="socialLayout">
-      
+
           </div>
         </div>
 
@@ -99,6 +99,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   </header>
 
   <div id="main" class="main">
+
     <h1>View Documents</h1>
     <?php
     $property_id = $_SESSION['property_id'];

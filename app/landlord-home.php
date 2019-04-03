@@ -21,6 +21,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <link href='css/navStyle.css' rel='stylesheet' type='text/css'>
   <script src="js/script.js"></script>
   <link rel="css/stylesheet" href="index-style.css">
+      <link href='css/home-style.css' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -73,7 +74,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   </header>
 
   <div id="main" class="main">
-      <img id="logo" src="goldLogoo.jpg" alt="Logo" width="150" height="150">
+          <img id="logo" src="logoTransparent.jpg" alt="Logo" width="900" height="800">
     <h1>Hi, <b><?php echo htmlspecialchars($_SESSION["fname"]); ?> <?php echo htmlspecialchars($_SESSION["lname"]); ?></b>. Welcome to our site.</h1>
   </div>
 
