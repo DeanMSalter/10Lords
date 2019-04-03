@@ -31,6 +31,11 @@ $_SESSION['property_id']= $f['property_id'];
   <link rel="css/stylesheet" href="index-style.css">
 </head>
 
+<div id="main" class="main">
+    <img id="logo" src="logoTransparent.png" alt="Logo" width="1000" height="800">
+
+</div>
+
 <body>
   <header class="stickyNav">
     <div class="mainHeader background-box background-color ", style="background-color:#B71C1C">
@@ -82,9 +87,7 @@ $_SESSION['property_id']= $f['property_id'];
 
               </ul>
 
-              <footer>
-                <p></p>
-              </footer>
+        
 
             </div>
           </nav>
@@ -101,7 +104,6 @@ $_SESSION['property_id']= $f['property_id'];
 
   <div id="main" class="main">
     <img id="logo" src="colourLogo.jpg" alt="Logo" width="400" height="458">
-    <h1 id="greeting">Hi, <b><?php echo htmlspecialchars($_SESSION["fname"]); ?> <?php echo htmlspecialchars($_SESSION["lname"]); ?></b>. Account Management </h1>
 
   </div>
 

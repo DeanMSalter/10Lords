@@ -26,6 +26,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <link rel="css/stylesheet" href="index-style.css">
 </head>
 
+<div id="main" class="main">
+    <img id="logo" src="logoTransparent.png" alt="Logo" width="1000" height="800">
+
+</div>
+
 <body>
   <header class="stickyNav">
     <div class="mainHeader background-box background-color ", style="background-color:#B71C1C">
@@ -37,6 +42,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
               <img class="menuNavImg" width="25" height="25" src="MenuNav.png" alt="Menu Navigation Button">
             </span>
           </div>
+
+
 
           <nav id="navigationBar" class="sideNav background-color">
             <div class="navContainer">

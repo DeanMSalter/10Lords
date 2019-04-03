@@ -11,18 +11,26 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 ?>
 <!DOCTYPE html>
 <html>
+
 <head>
   <link rel="icon" href="favicon/favicon.ico" sizes="16x16" type="image/png">
   <link rel="shortcut icon" href="ico2.ico" type="image/x-icon">
   <meta charset="utf-8">
   <title>Tenant Chatroom</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <link href='css/home-style.css' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/myStyle.css">
   <link href='css/navStyle.css' rel='stylesheet' type='text/css'>
   <script src="js/script.js"></script>
   <link rel="css/stylesheet" href="index-style.css">
     <link href='css/chat-style.css' rel='stylesheet' type='text/css'>
 </head>
+
+<div id="main" class="main">
+    <img id="logo" src="logoTransparent.png" alt="Logo" width="1000" height="800">
+
+
+</div>
 
 <body>
   <header class="stickyNav">
@@ -150,6 +158,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
           </div>
         <?php endwhile;?>
       </section>
+
 
 
     </div>

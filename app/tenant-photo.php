@@ -44,6 +44,11 @@
   <link href='css/home-style.css' rel='stylesheet' type='text/css'>
 </head>
 
+<div id="main" class="main">
+    <img id="logo" src="logoTransparent.png" alt="Logo" width="1000" height="800">
+
+</div>
+
 <body>
   <header class="stickyNav">
     <div class="mainHeader background-box background-color">
@@ -88,9 +93,8 @@
                   <a href="logout.php" class="btn btn-danger">Sign Out </a>
                 </li>
               </ul>
-              <footer>
-                <p></p>
-              </footer>
+
+            
             </div>
           </nav>
         </div>
