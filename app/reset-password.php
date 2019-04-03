@@ -84,7 +84,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <div class="wrapper">
       <div class = 'BlackBox' id ="centre_BlackBox">
       <div class = 'move-Content' id = "move-Content">
-        <img src="goldLogoo.jpg" width="350" height="350" class = "img-center">
+        <img src="colourLogo.jpg" width="350" height="350" class = "img-center">
         <h2>Reset Password</h2>
         <p>Please fill out this form to reset your password.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
