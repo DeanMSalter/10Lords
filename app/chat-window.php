@@ -153,15 +153,16 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
           $property_id= $_GET['property_id'];
           $messsage = $_POST['message'];
-
-          $query = "INSERT INTO chat (property_id,message) values ('$property_id','$messsage')";
+          $fname = $_SESSION['fname']
+          $lname = $_SESSION['lname']
+          $query = "INSERT INTO chat (property_id,fname,lname,message) values ('$property_id','$fname','$lname','$messsage')";
 
           $run = $link->query($query);
         }
         ?>
       </section>
       <section>
-        
+
         <?php
         $property_id= $_GET['property_id'];
         $query = "SELECT * FROM chat WHERE property_id='$property_id'";
@@ -173,7 +174,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
           </div>
         <?php endwhile;?>
       </section>
-    
+
     </div>
 
   </body>

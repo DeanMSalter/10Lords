@@ -9,8 +9,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   exit;
 }
 ?>
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -123,8 +121,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         if(isset($_POST['send'])){
           $property_id = $_SESSION['property_id'];
           $messsage = $_POST['message'];
-
-          $query = "INSERT INTO chat (property_id,message) values ('$property_id','$messsage')";
+          $fname = $_SESSION['fname'];
+          $lname = $_SESSION['lname'];
+          $query = "INSERT INTO chat (property_id,fname,lname,message) values ('$property_id','$fname','$lname','$messsage')";
 
           $run = $link->query($query);
         }
@@ -139,7 +138,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         while($row = $run->fetch_array()) :
           ?>
           <div id="chat_data">
-            <span style="color:green;"><?php echo $row['message']; ?></span>
+            <?php echo $row['fname'];  echo " "; echo $row['lname']; ?>
+            <span style="color:green;">: <?php echo $row['created_at']; ?> --- <?php echo $row['message']; ?></span>
           </div>
         <?php endwhile;?>
       </section>
