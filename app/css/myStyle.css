@@ -19,7 +19,7 @@ h1{
 }
 #chatHeader{
   position: absolute;
-  top:5%;
+  top:3%;
   left:-5%;
 }
 #submitChat{
@@ -31,7 +31,7 @@ h1{
 #submitButton{
   position: absolute;
   top:20%;
-  left:14%;
+  left:15%;
     height:5%;
 }
 .main {

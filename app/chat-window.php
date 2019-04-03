@@ -66,41 +66,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
               </ul>
 
-              <footer>
-                <p>something</p>
-              </footer>
-
             </div>
           </nav>
         </div>
 
-        <div class="grid-column-33-per content-align-center">
-          <div class="headerLogo">
-            <p>logo</p>
-          </div>
-        </div>
 
-        <div class="grid-column-33-per content-align-right">
-          <div class="socialLayout">
-            <ul>
-              <li>
-                <a href="https://twitter.com/leoclarke_" target="_blank">
-                  <img height="20" width="20" src="socials/twitter.png" alt="Twitter Icon">
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/leoclarke_/" target="_blank">
-                  <img height="20" width="20" src="socials/instagramPNG.png" alt="Instagram Icon">
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/leo-clarke-663315157/" target="_blank">
-                  <img height="20" width="20" src="socials/linkedinPNG.png" alt="Linkedin Icon">
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
 
       </div>
     </div>
@@ -125,14 +95,14 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       <div id="container">
         <div class="row">
           <div class="col-sm-2 col-md-6">
-            <h1 class="alert alert-success">Live Chat</h1>
+            <h1 id="chatHeader" class="alert alert-success">Live Chat</h1>
             <h1 class="alert alert-success">
               <form method="post">
                 <div class="form-group">
-                  <textarea class="form-control" placeholder="Your Message" name="message"></textarea>
+                  <textarea  id="submitChat" class="form-control" placeholder="Your Message" name="message"></textarea>
                 </div>
                 <div class="form-group">
-                  <input class="btn btn-success btn-block" name="send"  type="submit" value="Send">
+                  <input id = "submitButton"  class="btn btn-success btn-block" name="send"  type="submit" value="Send">
                 </div>
 
               </form>
@@ -152,15 +122,16 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
           $property_id= $_GET['property_id'];
           $messsage = $_POST['message'];
-          $fname = $_SESSION['fname']
-          $lname = $_SESSION['lname']
+          $fname = $_SESSION['fname'];
+          $lname = $_SESSION['lname'];
+
           $query = "INSERT INTO chat (property_id,fname,lname,message) values ('$property_id','$fname','$lname','$messsage')";
 
           $run = $link->query($query);
         }
         ?>
       </section>
-      <section>
+      <section id="chat-Container">
 
         <?php
         $property_id= $_GET['property_id'];
@@ -169,7 +140,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         while($row = $run->fetch_array()) :
           ?>
           <div id="chat_data">
-            <span style="color:green;"><?php echo $row['message']; ?></span>
+            <?php echo $row['fname'];  echo " "; echo $row['lname']; ?>
+            <span style="color:green;">: <?php echo $row['created_at']; ?> --- <?php echo $row['message']; ?></span>
           </div>
         <?php endwhile;?>
       </section>

@@ -66,18 +66,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
               </ul>
 
-              <footer>
-                <p>something</p>
-              </footer>
 
             </div>
           </nav>
         </div>
 
         <div class="grid-column-33-per content-align-center">
-          <div class="headerLogo">
-            <p>logo</p>
-          </div>
         </div>
       </div>
     </div>
