@@ -37,7 +37,8 @@ CREATE TABLE chat (
 CREATE TABLE image (
   image_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
   image VARCHAR(100) NOT NULL,
-  image_text TEXT NOT NULL
+  image_text TEXT NOT NULL,
+  property_id int NOT NULL
 );
 
 CREATE TABLE document (
