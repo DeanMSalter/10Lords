@@ -1,2 +1,2 @@
-# 10Lords
+# 10 Lords
 Landlord - Tenant communication app
