@@ -58,9 +58,11 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="navContainer">
               <ul class="navMenu">
+
                 <li class="navItems">
                   <a href="tenant-home.php">Home</a>
                 </li>
+
                 <li class="navItems">
                   <a href="chat.php">Chat</a>
                 </li>
