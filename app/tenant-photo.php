@@ -64,8 +64,8 @@
                 <li class="navItems">
                   <a href="chat.php">Chat</a>
                 </li>
-                <li class="navItems">
-                  <a>Account</a>
+                  <li class="navItems">
+                  <a href="tenant-account.php">Account </a>
                 </li>
                 <li class="navItems">
                   <a href="tenant-photo.php">Photos</a>
