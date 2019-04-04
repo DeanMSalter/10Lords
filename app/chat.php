@@ -38,7 +38,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             </span>
           </div>
 
-
           <nav id="navigationBar" class="sideNav background-color">
             <div class="navContainer">
               <ul class="navMenu">
@@ -66,15 +65,17 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 <li class="navItems">
                   <a href="logout.php" class="btn btn-danger">Sign Out </a>
                 </li>
-
               </ul>
-
-
             </div>
           </nav>
         </div>
 
         <div class="grid-column-33-per content-align-center">
+          <div class="headerLogo">
+            <p id="title"> 10 Lords </p>
+          </div>
+        </div>
+
         </div>
       </div>
     </div>
@@ -119,6 +120,5 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       </div>
     <?php endwhile;?>
   </div>
-
 </body>
 </html>

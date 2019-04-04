@@ -80,14 +80,10 @@ $_SESSION['property_id']= $f['property_id'];
                 <li class="navItems">
                   <a href="logout.php" class="btn btn-danger">Sign Out </a>
                 </li>
-
               </ul>
-
-
             </div>
           </nav>
         </div>
-
         <div class="grid-column-33-per content-align-center">
           <div class="headerLogo">
             <p id="title"> 10 Lords </p>
@@ -100,7 +96,7 @@ $_SESSION['property_id']= $f['property_id'];
   <div id="main" class="main">
       <img id="logo" src="logoTransparent.png" alt="Logo" width="1000" height="800">
     <h1 id="greeting">Hi, <b><?php echo htmlspecialchars($_SESSION["fname"]); ?> <?php echo htmlspecialchars($_SESSION["lname"]); ?></b>. Welcome to the 10 Lords Accommodation Web Portal.</h1>
-      
+
       <?php
     $property_id = $_SESSION["property_id"];
     $sql = "SELECT * FROM event WHERE property_id='$property_id'";
