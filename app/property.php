@@ -189,6 +189,25 @@ $result = mysqli_query($link, "SELECT document, document_text FROM document WHER
       <?php
     }
     ?>
+      <h1>Add event</h1>
+    <form method="post">
+      <input type="text" name="event_name" placeholder="event name" required>
+      <input type="text" name="event_text" placeholder="event details" required>
+          <button type="submit" name="add" value="add">Add event</button>
+    </form>
+    <?php
+    if(isset($_POST['add'])){
+
+      $property_id= $_GET['property_id'];
+      $event_details = $_POST['event_text'];
+      $event_name = $_POST['event_name'];
+
+      $query = "INSERT INTO event (event,event_text,property_id) values ('$event_name','$event_details','$property_id')";
+
+      $run = $link->query($query);
+    }
+    ?>
+
         <h1>document upload</h1>
     <?php
     while ($row = mysqli_fetch_array($result)) {
