@@ -9,7 +9,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 }
 ?>
 
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,9 +27,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 <div id="main" class="main">
     <img id="logo" src="logoTransparent.png" alt="Logo" width="1000" height="800">
-
 </div>
-
 <body>
   <header class="stickyNav">
     <div class="mainHeader background-box background-color ", style="background-color:#B71C1C">
@@ -43,14 +40,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             </span>
           </div>
 
-
-
           <nav id="navigationBar" class="sideNav background-color">
             <div class="navContainer">
               <ul class="navMenu">
 
                 <li class="navItems">
-                  <a href="tenant-home">Home</a>
+                  <a href="tenant-home.php">Home</a>
                 </li>
 
                 <li class="navItems">
@@ -80,11 +75,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 <li class="navItems">
                   <a href="logout.php" class="btn btn-danger">Sign Out </a>
                 </li>
-
-
-
               </ul>
-
             </div>
           </nav>
         </div>
@@ -100,7 +91,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
           </div>
         </div>
-
       </div>
     </div>
   </header>
@@ -122,6 +112,5 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     }
     ?>
   </div>
-
 </body>
 </html>
