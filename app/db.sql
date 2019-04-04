@@ -51,6 +51,13 @@ CREATE TABLE document (
   property_id int NOT NULL
 );
 
+CREATE TABLE event (
+  event_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  event VARCHAR(100) NOT NULL,
+  event_text TEXT NOT NULL,
+  property_id int NOT NULL
+);
+
 SELECT occupant.occupant_id, tenant.fname, tenant.lname FROM Ocupant INNER JOIN tenant ON occupant.tenant_id = tenant.tenant_id where property_id = '$prop_id';
 
 GRANT ALL PRIVILEGES ON mydb.* TO 'root'@'localhost' IDENTIFIED BY 'root';
