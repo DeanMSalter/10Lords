@@ -28,7 +28,7 @@ Visit the web application via the link http://10lords.com/ using a web browser, 
 Installation steps  
 1. Go to http://10lords.com/
 2. Use the Register Here link and enter your details to sign up and click submit
-3. You will then be directed to your homepage and almost to use the web application
+3. You will then be directed to your homepage and almost ready to use the web application
 4. Click sign out and register another user, a tenant if you already have a landlord account or vice versa
 5. On the home page click property management
 6.
