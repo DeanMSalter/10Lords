@@ -23,13 +23,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <link href='css/navStyle.css' rel='stylesheet' type='text/css'>
   <script src="js/script.js"></script>
   <link rel="css/stylesheet" href="index-style.css">
-    <link href='css/chat-style.css' rel='stylesheet' type='text/css'>
+  <link href='css/chat-style.css' rel='stylesheet' type='text/css'>
 </head>
 
 <div id="main" class="main">
     <img id="logo" src="logoTransparent.png" alt="Logo" width="1000" height="800">
-
-
 </div>
 
 <body>
@@ -56,7 +54,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 </li>
 
                 <li class="navItems">
-                  <a href="tenant-account.php">Account </a>
+                  <a href="tenant-account.php">Account</a>
                 </li>
 
                 <li class="navItems">

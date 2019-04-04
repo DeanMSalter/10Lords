@@ -21,7 +21,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <link href='css/navStyle.css' rel='stylesheet' type='text/css'>
   <script src="js/script.js"></script>
   <link rel="css/stylesheet" href="index-style.css">
-      <link href='css/home-style.css' rel='stylesheet' type='text/css'>
+  <link href='css/home-style.css' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -29,12 +29,15 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <div class="mainHeader background-box background-color">
       <div class="mainHeader-grid fs">
 
+
+
         <div class="grid-column-33-per content-align-left">
           <div class="menuNavButton">
             <span onclick="toggleNav()">
               <img class="menuNavImg" width="25" height="25" src="MenuNav.png" alt="Menu Navigation Button">
             </span>
           </div>
+
 
           <nav id="navigationBar" class="sideNav background-color">
             <div class="navContainer">
@@ -49,7 +52,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 </li>
 
                 <li class="navItems">
-                  <a>Acount</a>
+                  <a>Account</a>
                 </li>
 
                 <li class="navItems">
@@ -57,11 +60,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 </li>
 
                 <li class="navItems">
-                  <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
+                  <a href="reset-password.php" class="btn btn-warning">Reset Password</a>
                 </li>
 
                 <li class="navItems">
-                  <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
+                  <a href="logout.php" class="btn btn-danger">Sign Out </a>
                 </li>
 
               </ul>
@@ -74,7 +77,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   </header>
 
   <div id="main" class="main">
-          <img id="logo" src="logoTransparent.jpg" alt="Logo" width="900" height="800">
+          <img id="logo" src="logoTransparent.png" alt="Logo" width="1000" height="800">
     <h1>Hi, <b><?php echo htmlspecialchars($_SESSION["fname"]); ?> <?php echo htmlspecialchars($_SESSION["lname"]); ?></b>. Welcome to our site.</h1>
   </div>
 

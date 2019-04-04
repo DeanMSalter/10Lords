@@ -15,12 +15,13 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <link rel="icon" href="favicon/favicon.ico" sizes="16x16" type="image/png">
   <link rel="shortcut icon" href="ico2.ico" type="image/x-icon">
   <meta charset="utf-8">
-  <title>Landlord Home</title>
+  <title>Landlord Properties</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
   <link rel="stylesheet" href="css/myStyle.css">
   <link href='css/navStyle.css' rel='stylesheet' type='text/css'>
   <script src="js/script.js"></script>
   <link rel="css/stylesheet" href="index-style.css">
+  <link href='css/home-style.css' rel='stylesheet' type='text/css'>
 </head>
 
 
@@ -49,26 +50,21 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 </li>
 
                 <li class="navItems">
-                  <a>Acount</a>
+                  <a>Account</a>
                 </li>
 
                 <li class="navItems">
-                  <a href ="property.php"> Property Management</a>
+                  <a>Property Management</a>
                 </li>
 
                 <li class="navItems">
-                  <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
+                  <a href="reset-password.php" class="btn btn-warning">Reset Password</a>
                 </li>
 
                 <li class="navItems">
-                  <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
+                  <a href="logout.php" class="btn btn-danger">Sign Out </a>
                 </li>
-
               </ul>
-
-              <footer>
-                <p>something</p>
-              </footer>
 
             </div>
           </nav>
@@ -76,34 +72,20 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
         <div class="grid-column-33-per content-align-center">
           <div class="headerLogo">
-            <p>logo</p>
+            <p id="title"> 10 Lords </p>
           </div>
         </div>
 
         <div class="grid-column-33-per content-align-right">
           <div class="socialLayout">
-            <ul>
-              <li>
-                <a href="https://twitter.com/leoclarke_" target="_blank">
-                  <img height="20" width="20" src="socials/twitter.png" alt="Twitter Icon">
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/leoclarke_/" target="_blank">
-                  <img height="20" width="20" src="socials/instagramPNG.png" alt="Instagram Icon">
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/leo-clarke-663315157/" target="_blank">
-                  <img height="20" width="20" src="socials/linkedinPNG.png" alt="Linkedin Icon">
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
     </div>
   </header>
+
+  <div id="main" class="main">
+          <img id="logo" src="logoTransparent.png" alt="Logo" width="1000" height="800">
 
   <div id="main" class="main">
     <h1>Manage your Property</h1>
