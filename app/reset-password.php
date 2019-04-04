@@ -100,7 +100,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
             <div class="form-group" id = "center_buttons">
                 <input type="submit" class="btn btn-primary" value="Submit">
-                <a class="btn btn-link" href="welcome.php">Cancel</a>
+                <a class="btn btn-link" href="javascript:history.go(-1)" title="Return to the previous page">&laquo; Go back</a>
+
             </div>
         </form>
       </div>
