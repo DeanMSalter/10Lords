@@ -71,7 +71,7 @@ $result = mysqli_query($link, "SELECT document, document_text FROM document WHER
               <ul class="navMenu">
 
                 <li class="navItems">
-                  <a href="tenant-home.php">Home</a>
+                  <a href="landlord-home.php">Home</a>
                 </li>
                 <li class="navItems">
                   <a href="tenant-chat.php">Chat</a>
