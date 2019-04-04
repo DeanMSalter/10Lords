@@ -1,16 +1,16 @@
 # 10Lords
 Landlord and Tenant Housing communication app
-
-Description
+  
+Description  
 This project is about helping tenants connect more freely and efficiently with landlords or estate agents. Currently the endless options of communication can leave both parties confused or feeling like they have not been heard properly or ignored when important information is exchanged. The information itself can get lost via email or forgotten to be written down in a more formal way from phone conversations. This application aims to bring together all communication into one environment.
 
-Brief overview of Functions
+Brief overview of Functions  
 -Upload photos/document
 -Add tenant/landlord to chat too
 -Connect through chat
 -Personalise profile
 -Property management
-
+  
 Installation guide  
 Device  
 PC, Laptop  
