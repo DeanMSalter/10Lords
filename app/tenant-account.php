@@ -1,112 +1,112 @@
 <?php
 // Initialize the session
 session_start();
-require_once "config.php";
 
-// Check if the user is logged in, if not then redirect him to login page
+// Check if the user is logged in, if not then redirect to login page
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: index.html");
     exit;
 }
-$tenant_id = $_SESSION["id"];
-$sql = "SELECT property_id FROM occupant WHERE tenant_id='$tenant_id'";
-$result1 = $link->query($sql);
-$f = $result1->fetch_assoc();
-$_SESSION['property_id']= $f['property_id'];
+
+// Include config file
+require_once "config.php";
+
+
+// Define variables and initialize with empty values
+$new_password = $confirm_password = "";
+$new_password_err = $confirm_password_err = "";
+
+// Processing form data when form is submitted
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+
+    // Validate new password
+    if(empty(trim($_POST["new_password"]))){
+        $new_password_err = "Please enter the new password.";
+    } elseif(strlen(trim($_POST["new_password"])) < 6){
+        $new_password_err = "Password must have atleast 6 characters.";
+    } else{
+        $new_password = trim($_POST["new_password"]);
+    }
+
+    // Validate confirm password
+    if(empty(trim($_POST["confirm_password"]))){
+        $confirm_password_err = "Please confirm the password.";
+    } else{
+        $confirm_password = trim($_POST["confirm_password"]);
+        if(empty($new_password_err) && ($new_password != $confirm_password)){
+            $confirm_password_err = "Password did not match.";
+        }
+    }
+
+    // Check input errors before updating the database
+    if(empty($new_password_err) && empty($confirm_password_err)){
+        // Prepare an update statement
+        $tenant_id = $_SESSION['tenant_id'];
+        $sql = "UPDATE tenant SET password = ? WHERE tenant_id = $landlord_id";
+
+        if($stmt = mysqli_prepare($link, $sql)){
+            // Bind variables to the prepared statement as parameters
+            mysqli_stmt_bind_param($stmt, "si", $param_password, $param_id);
+
+            // Set parameters
+            $param_password = password_hash($new_password, PASSWORD_DEFAULT);
+            $param_id = $_SESSION["id"];
+
+            // Attempt to execute the prepared statement
+            if(mysqli_stmt_execute($stmt)){
+                // Password updated successfully. Destroy the session, and redirect to login page
+                session_destroy();
+                header("location: tenant-home.php");
+                exit();
+            } else{
+                echo "Oops! Something went wrong. Please try again later.";
+            }
+        }
+
+        // Close statement
+        mysqli_stmt_close($stmt);
+    }
+
+    // Close connection
+    mysqli_close($link);
+}
 ?>
 
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="icon" href="favicon/favicon.ico" sizes="16x16" type="image/png">
-  <meta charset="utf-8">
-  <title>Your Account</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-  <link rel="stylesheet" href="css/myStyle.css">
-  <link href='css/navStyle.css' rel='stylesheet' type='text/css'>
-    <link href='css/home-style.css' rel='stylesheet' type='text/css'>
-
-  <script src="js/script.js"></script>
-  <link rel="css/stylesheet" href="index-style.css">
+    <meta charset="UTF-8">
+    <title>Reset Password</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <link href='css/register-login-style.css' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 </head>
-
-<div id="main" class="main">
-  
-
-</div>
-
 <body>
-  <header class="stickyNav">
-    <div class="mainHeader background-box background-color ", style="background-color:#B71C1C">
-      <div class="mainHeader-grid fs">
-
-        <div class="grid-column-33-per content-align-left">
-          <div class="menuNavButton">
-            <span onclick="toggleNav()">
-              <img class="menuNavImg" width="25" height="25" src="MenuNav.png" alt="Menu Navigation Button">
-            </span>
-          </div>
-
-          <nav id="navigationBar" class="sideNav background-color">
-
-            <div class="navContainer">
-              <ul class="navMenu">
-
-                <li class="navItems">
-                  <a href="tenant-home.php">Home</a>
-                </li>
-
-                <li class="navItems">
-                  <a href="tenant-chat.php">Chat</a>
-                </li>
-
-                <li class="navItems">
-                  <a>Account </a>
-                </li>
-
-                <li class="navItems">
-                  <a href="tenant-photo.php">Photos</a>
-                </li>
-
-                 <li class="navItems">
-                  <a href="tenant-document.php">View Documents </a>
-                </li>
-
-                <li class="navItems">
-                  <a href ="property.php"> Property Management</a>
-                </li>
-
-                <li class="navItems">
-                  <a href="reset-password.php" class="btn btn-warning">Reset Password</a>
-                </li>
-
-                <li class="navItems">
-                  <a href="logout.php" class="btn btn-danger">Sign Out </a>
-                </li>
-
-              </ul>
-
-
+    <div class="wrapper">
+      <div class = 'BlackBox' id ="centre_BlackBox">
+      <div class = 'move-Content' id = "move-Content">
+        <img src="colourLogo.jpg" width="350" height="350" class = "img-center">
+        <h2>Reset Password</h2>
+        <p>Please fill out this form to reset your password.</p>
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+            <div class="form-group <?php echo (!empty($new_password_err)) ? 'has-error' : ''; ?>">
+                <p1>New Password</p1>
+                <input type="password" name="new_password" class="form-control" value="<?php echo $new_password; ?>">
+                <span class="help-block"><?php echo $new_password_err; ?></span>
+            </div>
+            <div class="form-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
+                <p1>Confirm Password</p1>
+                <input type="password" name="confirm_password" class="form-control">
+                <span class="help-block"><?php echo $confirm_password_err; ?></span>
+            </div>
+            <div class="form-group" id = "center_buttons">
+                <input type="submit" class="btn btn-primary" value="Submit">
+                <a class="btn btn-link" href="javascript:history.go(-1)" title="Return to the previous page">&laquo; Go back</a>
 
             </div>
-          </nav>
-        </div>
-
-        <div class="grid-column-33-per content-align-center">
-          <div class="headerLogo">
-            <p id="title"> 10 Lords </p>
-          </div>
-        </div>
+        </form>
       </div>
     </div>
-  </header>
-
-   <div id="main" class="main">
-        <img id="logo" src="logoTransparent.png" alt="Logo" width="1000" height="800">
-    <h1 id="greeting"> <b></b> Account Managment</h1>
-
-  </div>
-
+    </div>
 </body>
 </html>
