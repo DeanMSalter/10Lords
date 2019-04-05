@@ -41,7 +41,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Check input errors before updating the database
     if(empty($new_password_err) && empty($confirm_password_err)){
         // Prepare an update statement
-        $landlord_id = $_SESSION['landlord_id'];
+        $landlord_id = $_SESSION['id'];
         $sql = "UPDATE landlord SET password = ? WHERE landlord_id = $landlord_id";
 
         if($stmt = mysqli_prepare($link, $sql)){
@@ -88,7 +88,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <img src="colourLogo.jpg" width="350" height="350" class = "img-center">
         <h2>Reset Password</h2>
         <p>Please fill out this form to reset your password.</p>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        <form method="post">
             <div class="form-group <?php echo (!empty($new_password_err)) ? 'has-error' : ''; ?>">
                 <p1>New Password</p1>
                 <input type="password" name="new_password" class="form-control" value="<?php echo $new_password; ?>">
