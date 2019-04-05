@@ -4,10 +4,9 @@ body {
   padding: 25px 50px;
 }
 #logo{
-  position: relative;
+  position: absolute;
   top:0%;
   left:0%;
-  z-index: 1;
 }
 #greeting{
   position: absolute;

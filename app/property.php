@@ -51,7 +51,7 @@ $result = mysqli_query($link, "SELECT document, document_text FROM document WHER
 </head>
 
 <div id="main" class="main">
-    <img id="logo" src="logoTransparent.png" alt="Logo" width="1000" height="800">
+  
 </div>
 
 <body>

@@ -82,7 +82,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   </header>
 
   <div id="main" class="main">
-          <img id="logo" src="logoTransparent.png" alt="Logo" width="1000" height="800">
+      
 
   <div id="main" class="main">
     <?php

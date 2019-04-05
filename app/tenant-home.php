@@ -33,6 +33,7 @@ $_SESSION['property_id']= $f['property_id'];
 </head>
 
 <body>
+
   <header class="stickyNav">
     <div class="mainHeader background-box background-color ", style="background-color:#B71C1C">
       <div class="mainHeader-grid fs">
@@ -94,9 +95,8 @@ $_SESSION['property_id']= $f['property_id'];
   </header>
 
   <div id="main" class="main">
-      <img id="logo" src="logoTransparent.png" alt="Logo" width="1000" height="800">
     <h1 id="greeting">Hi, <b><?php echo htmlspecialchars($_SESSION["fname"]); ?> <?php echo htmlspecialchars($_SESSION["lname"]); ?></b>. Welcome to the 10 Lords Accommodation Web Portal.</h1>
-
+    <img id="logo" src="goldLogoo.jpg" alt="Logo" width="150" height="150">
       <?php
     $property_id = $_SESSION["property_id"];
     $sql = "SELECT * FROM event WHERE property_id='$property_id'";

@@ -76,7 +76,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   </header>
 
   <div id="main" class="main">
-          <img id="logo" src="logoTransparent.png" alt="Logo" width="1000" height="800">
+      
     <h1>Hi, <b><?php echo htmlspecialchars($_SESSION["fname"]); ?> <?php echo htmlspecialchars($_SESSION["lname"]); ?></b>. Welcome to our site.</h1>
   </div>
 

@@ -11,24 +11,18 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 ?>
 <!DOCTYPE html>
 <html>
-
 <head>
   <link rel="icon" href="favicon/favicon.ico" sizes="16x16" type="image/png">
   <link rel="shortcut icon" href="ico2.ico" type="image/x-icon">
   <meta charset="utf-8">
-  <title>Tenant Chatroom</title>
+  <title>Landlord Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-  <link href='css/home-style.css' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/myStyle.css">
   <link href='css/navStyle.css' rel='stylesheet' type='text/css'>
   <script src="js/script.js"></script>
   <link rel="css/stylesheet" href="index-style.css">
-  <link href='css/chat-style.css' rel='stylesheet' type='text/css'>
+    <link href='css/chat-style.css' rel='stylesheet' type='text/css'>
 </head>
-
-<div id="main" class="main">
-    <img id="logo" src="logoTransparent.png" alt="Logo" width="1000" height="800">
-</div>
 
 <body>
   <header class="stickyNav">
@@ -42,41 +36,25 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
           </div>
           <nav id="navigationBar" class="sideNav background-color">
             <div class="navContainer">
-
               <ul class="navMenu">
-
                 <li class="navItems">
                   <a href="tenant-home.php">Home</a>
                 </li>
-
                 <li class="navItems">
-                  <a>Chat</a>
+                  <a href="tenant-chat.php">Chat</a>
                 </li>
-
                 <li class="navItems">
-                  <a href="tenant-account.php">Account</a>
+                  <a>Account</a>
                 </li>
-
                 <li class="navItems">
-                  <a href="tenant-photo.php">Photos</a>
+                  <a>Property Management</a>
                 </li>
-
-                 <li class="navItems">
-                  <a href="tenant-document.php">View Documents </a>
-                </li>
-
                 <li class="navItems">
-                  <a href ="property.php"> Property Management</a>
+                  <a href="reset-password.php">Reset Your Password</a>
                 </li>
-
                 <li class="navItems">
-                  <a href="reset-password.php" class="btn btn-warning">Reset Password</a>
+                  <a href="logout.php" >Sign Out of Your Account</a>
                 </li>
-
-                <li class="navItems">
-                  <a href="logout.php" class="btn btn-danger">Sign Out </a>
-                </li>
-
               </ul>
             </div>
           </nav>
@@ -156,7 +134,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
           </div>
         <?php endwhile;?>
       </section>
-
 
 
     </div>
