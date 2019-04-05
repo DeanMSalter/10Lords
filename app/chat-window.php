@@ -50,11 +50,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 </li>
 
                 <li class="navItems">
-                  <a>Acount</a>
+                  <a href="landlord-account.php" class="btn btn-warning">Account</a>
                 </li>
 
                 <li class="navItems">
-                  <a>Property Management</a>
+                   <a href="property-main.php" class="btn btn-warning">Property Management</a>
                 </li>
 
                 <li class="navItems">

@@ -111,7 +111,6 @@ $_SESSION['property_id']= $f['property_id'];
       ?></ul><?php
     } else {
       ?>
-      <p class="text-center">No users to add!</p>
       <?php
     }
     ?>

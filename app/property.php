@@ -112,7 +112,7 @@ $result = mysqli_query($link, "SELECT document, document_text FROM document WHER
     </div>
   </header>
 
-  <div id="main" class="main">
+  <div id="main" class="main" style="position: relative;left:50%;">
     <h1><?php echo htmlspecialchars($_GET["property_name"]); ?></h1>
 
 
@@ -196,7 +196,29 @@ $result = mysqli_query($link, "SELECT document, document_text FROM document WHER
       $run = $link->query($query);
     }
     ?>
+	 <?php
+    $property_id = $_GET["property_id"];
+    $sql = "SELECT * FROM event WHERE property_id='$property_id'";
+    $result1 = $link->query($sql);
 
+    if ($result1->num_rows > 0) {
+      ?><ul><?php
+      while($f = $result1->fetch_assoc()) {
+        ?>
+        <li>
+          <a href="remove-event.php?event_id=<?php echo $f['evenr_id'];?>">
+            <?php echo $f['event']; ?>
+            <?php echo $f['event_text']; ?>
+          </a>
+        </li>
+        <?php
+      }
+      ?></ul><?php
+    } else {
+      ?>
+      <?php
+    }
+    ?>
         <h1>document upload</h1>
     <?php
     while ($row = mysqli_fetch_array($result)) {
@@ -223,6 +245,20 @@ $result = mysqli_query($link, "SELECT document, document_text FROM document WHER
         <button type="submit" name="upload">POST</button>
       </div>
     </form>
+	<h1>View Documents</h1>
+    <?php
+    $property_id = $_GET['property_id'];
+    $result = mysqli_query($link, "SELECT document, document_text FROM document WHERE property_id = $property_id ");
+    ?>
+
+    <?php
+    while ($row = mysqli_fetch_array($result)) {
+      echo "<div id='img_div'>";
+      echo "<img src='images/".$row['document']."' >";
+      echo "<p>".$row['document_text']."</p>";
+      echo "</div>";
+    }
+    ?>
         <h1>View pictures</h1>
     <?php
     $property_id = $_GET['property_id'];
