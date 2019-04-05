@@ -48,15 +48,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 </li>
 
                 <li class="navItems">
-                  <a>Account</a>
+                  <a href="tenant-account.php">Account </a>
                 </li>
 
                 <li class="navItems">
                   <a href ="property-main.php"> Property Management</a>
-                </li>
-
-                <li class="navItems">
-                  <a href="reset-password.php" class="btn btn-warning">Reset Password</a>
                 </li>
 
                 <li class="navItems">
