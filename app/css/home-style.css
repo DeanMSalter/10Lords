@@ -24,11 +24,13 @@ body {
 
 b{
   font-family: Arial, Geneva, Helvetica, sans-serif;
+  top: 10%;
 }
 
 h1{
   font-family: Arial, Geneva, Helvetica, sans-serif;
   z-index: 10;
+  top: 10%;
 }
 
 a{

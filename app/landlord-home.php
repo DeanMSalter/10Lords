@@ -17,9 +17,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <meta charset="utf-8">
   <title>Landlord Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-  <link href='css/home-style.css' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/myStyle.css">
   <link href='css/navStyle.css' rel='stylesheet' type='text/css'>
+    <link href='css/home-style.css' rel='stylesheet' type='text/css'>
+
   <script src="js/script.js"></script>
   <link rel="css/stylesheet" href="index-style.css">
 </head>
@@ -72,8 +73,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   </header>
 
   <div id="main" class="main">
-      
-    <h1>Hi, <b><?php echo htmlspecialchars($_SESSION["fname"]); ?> <?php echo htmlspecialchars($_SESSION["lname"]); ?></b>. Welcome to our site.</h1>
+    <img id="logo" src="colourLogo.jpg" alt="Logo" width="150" height="150">
+    <h1 id="greeting">Hi, <b><?php echo htmlspecialchars($_SESSION["fname"]); ?> <?php echo htmlspecialchars($_SESSION["lname"]); ?></b>. Welcome to the 10 Lords Landlord Portal.</h1>
+
   </div>
 
 </body>
