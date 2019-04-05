@@ -36,3 +36,52 @@ Installation steps
 4. Click sign out and register another user, a tenant if you already have a landlord account or vice versa
 5. On the home page click property management
 6.
+
+Test guide  
+start_chrome()  
+go_to("10lords.com")  
+click("Register Here")  
+write("Jim", into="First Name")  
+write("smith", into="Last Name")  
+write("test@testing101.com", into="email")  
+write("testing", into="Password")  
+write("testing", into="Confirm Password")  
+click("Submit")  
+  
+write("test@testing101.com", into="email")  
+write("testing", into="Password")  
+click(Button("Login"))  
+click(Button("Sign Out"))  
+click(Button("Tenant Sign in"))  
+click(Button("Sign up now"))  
+write("Jim", into="First Name")  
+write("Tenant", into="Last Name")  
+write("test@testing101.com", into="email")  
+write("testing", into="Password")  
+write("testing", into="Confirm Password")  
+click("Submit")  
+write("test@testing101.com", into="email")  
+write("testing", into="Password")  
+click(Button("Login"))  
+  
+click("Sign Out")  
+click(Button("Landlord Sign in"))  
+write("test@testing101.com", into="email")  
+write("testing", into="Password")  
+  
+click("Reset Password")  
+write("newpass", into="New Password")  
+write("newpass", into="Confirm Password")  
+click(Button("Submit"))  
+  
+click("Property management")  
+write("12 address")  
+click(Button("Add"))  
+click("12 address")  
+click(Button("Add tenant")  
+click("[add]")  
+  
+write("Event1", into="event name")  
+write("new event", into="event details")  
+click(Button("Add event"))  
+  
