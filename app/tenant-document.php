@@ -64,7 +64,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                      <a>View Documents</a>
                    </li>
 
-
                     <li class="navItems">
                       <a href="logout.php" class="btn btn-danger">Sign Out </a>
                     </li>

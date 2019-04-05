@@ -49,10 +49,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                   <a href ="property.php"> Property Management</a>
                 </li>
                 <li class="navItems">
-                  <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
+                  <a href="reset-password.php" class="btn btn-warning">Reset Password</a>
                 </li>
                 <li class="navItems">
-                  <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
+                  <a href="logout.php" class="btn btn-danger">Sign Out </a>
                 </li>
               </ul>
 
@@ -61,28 +61,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         </div>
         <div class="grid-column-33-per content-align-center">
           <div class="headerLogo">
-            <p>logo</p>
           </div>
         </div>
         <div class="grid-column-33-per content-align-right">
           <div class="socialLayout">
-            <ul>
-              <li>
-                <a href="https://twitter.com/leoclarke_" target="_blank">
-                  <img height="20" width="20" src="socials/twitter.png" alt="Twitter Icon">
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/leoclarke_/" target="_blank">
-                  <img height="20" width="20" src="socials/instagramPNG.png" alt="Instagram Icon">
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/leo-clarke-663315157/" target="_blank">
-                  <img height="20" width="20" src="socials/linkedinPNG.png" alt="Linkedin Icon">
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
