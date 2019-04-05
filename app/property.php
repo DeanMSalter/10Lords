@@ -74,28 +74,17 @@ $result = mysqli_query($link, "SELECT document, document_text FROM document WHER
                   <a href="landlord-home.php">Home</a>
                 </li>
                 <li class="navItems">
-                  <a href="tenant-chat.php">Chat</a>
+                  <a href="chat.php">Chat</a>
                 </li>
 
                 <li class="navItems">
-                  <a href="tenant-account.php">Account </a>
-                </li>
-
-                <li class="navItems">
-                  <a href="tenant-photo.php">Photos</a>
-                </li>
-
-                 <li class="navItems">
-                  <a href="tenant-document.php">View Documents </a>
+                  <a href="landlord-account.php">Account </a>
                 </li>
 
                 <li class="navItems">
                   <a> Property Management</a>
                 </li>
 
-                <li class="navItems">
-                  <a href="reset-password.php" class="btn btn-warning">Reset Password</a>
-                </li>
 
                 <li class="navItems">
                   <a href="logout.php" class="btn btn-danger">Sign Out </a>
