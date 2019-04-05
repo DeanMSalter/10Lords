@@ -73,7 +73,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   </header>
 
   <div id="main" class="main">
-    <img id="logo" src="colourLogo.jpg" alt="Logo" width="150" height="150">
+    <img id="logo" src="colourLogo.jpg" alt="Logo" width="250" height="250">
     <h1 id="greeting">Hi, <b><?php echo htmlspecialchars($_SESSION["fname"]); ?> <?php echo htmlspecialchars($_SESSION["lname"]); ?></b>. Welcome to the 10 Lords Landlord Portal.</h1>
 
   </div>
