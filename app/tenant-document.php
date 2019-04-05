@@ -48,33 +48,26 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                   <a href="tenant-home.php">Home</a>
                 </li>
 
-                <li class="navItems">
-                  <a href="tenant-chat.php">Chat</a>
-                </li>
+                    <li class="navItems">
+                      <a href="tenant-chat.php">Chat</a>
+                    </li>
 
-                <li class="navItems">
-                  <a href="tenant-account.php">Account </a>
-                </li>
+                    <li class="navItems">
+                      <a href="tenant-account.php">Account </a>
+                    </li>
 
-                <li class="navItems">
-                  <a href="tenant-photo.php">Photos</a>
-                </li>
+                    <li class="navItems">
+                      <a href="tenant-photo.php">Photos</a>
+                    </li>
 
-                 <li class="navItems">
-                  <a>View Documents </a>
-                </li>
+                    <li class="navItems">
+                     <a>View Documents</a>
+                   </li>
 
-                <li class="navItems">
-                  <a href ="property.php"> Property Management</a>
-                </li>
 
-                <li class="navItems">
-                  <a href="reset-password.php" class="btn btn-warning">Reset Password</a>
-                </li>
-
-                <li class="navItems">
-                  <a href="logout.php" class="btn btn-danger">Sign Out </a>
-                </li>
+                    <li class="navItems">
+                      <a href="logout.php" class="btn btn-danger">Sign Out </a>
+                    </li>
               </ul>
             </div>
           </nav>

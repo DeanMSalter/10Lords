@@ -50,6 +50,7 @@ $_SESSION['property_id']= $f['property_id'];
             <div class="navContainer">
               <ul class="navMenu">
 
+
                 <li class="navItems">
                   <a>Home</a>
                 </li>
@@ -66,13 +67,10 @@ $_SESSION['property_id']= $f['property_id'];
                   <a href="tenant-photo.php">Photos</a>
                 </li>
 
-                 <li class="navItems">
-                  <a href="tenant-document.php">View Documents </a>
-                </li>
-
                 <li class="navItems">
-                  <a href ="property.php"> Property Management</a>
-                </li>
+                 <a href="tenant-document.php">View Documents</a>
+               </li>
+
 
                 <li class="navItems">
                   <a href="logout.php" class="btn btn-danger">Sign Out </a>
