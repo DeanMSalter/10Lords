@@ -86,8 +86,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
           document.getElementById('chat').innerHTML = request.responseText;
         }
       }
-      request.open('GET','chat-data.php',true);
-      request.send();
     }
     setInterval(function(){loadChat()},1000);
     </script>
