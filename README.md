@@ -37,7 +37,7 @@ Installation steps
   
 
 Test guide  
-Download Helium and paste in this code.
+Download Helium and paste in this code.  
 start_chrome()  
 go_to("10lords.com")  
 click("Register Here")  
@@ -85,13 +85,11 @@ write("Event1", into="event name")
 write("new event", into="event details")  
 click(Button("Add event"))  
   
-go_to("http://localhost/10lords/app/chat.php")
-click("12 address")
-write("test message",into="Your message")
-click("send")
+go_to("http://localhost/10lords/app/chat.php")                                                                                    click("12 address")                                                                                                              write("test message",into="Your message")  
+click("send")  
 
 
-#Upload use cases cannot be tested automatically , 
-#due to the files not being present on all machines 
-#that will run the tests
-
+#Upload use cases cannot be tested automatically ,   
+#due to the files not being present on all machines   
+#that will run the tests  
+ 
